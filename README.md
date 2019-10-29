@@ -1,2 +1,12 @@
 # SortedSet
-Project developed in the subject Algorithms and data structure 2 at FaMAF (UNC)
+
+### Compilation
+
+gcc -Wextra -Werror -Wall -std=c99 -pedantic -g -c sorted_set.c
+
+gcc -Wextra -Werror -Wall -std=c99 -pedantic -g -o sset *.o main.c
+
+### Check memory leaks
+
+valgrind --show-reachable=yes --leak-check=full  ./sset
+
